@@ -656,7 +656,7 @@ namespace SeldomArchipelago
                         break;
                     case "AquaticScourgeHead": aquaticScourgeHeadOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "Mauler": maulerOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
-                    case "BrimstoneElemental": brimstoneElementalOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
+                    case "BrimstoneElemental": if (brimstoneElementalOnKill == null) brimstoneElementalOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "Cryogen": cryogenOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "CalamitasClone": calamitasCloneOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "GreatSandShark": greatSandSharkOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
@@ -666,7 +666,7 @@ namespace SeldomArchipelago
                     case "RavagerBody": ravagerBodyOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "AstrumDeusHead": astrumDeusHeadOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "ProfanedGuardianCommander": profanedGuardianCommanderOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
-                    case "Bumblefuck": bumblefuckOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
+                    case "Dragonfolly": bumblefuckOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "Providence": providenceOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "StormWeaverHead": stormWeaverHeadOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
                     case "CeaselessVoid": ceaselessVoidOnKill = type.GetMethod("OnKill", BindingFlags.Instance | BindingFlags.Public); break;
